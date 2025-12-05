@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="TERMINAL_ID_RISK_7DAY_WINDOW <= 0.551\ngini = 0.018\nsamples = 67240\nvalue = [66642, 598]\nclass = Not Fraud", fillcolor="#e5823b"] ;
+1 [label="TX_AMOUNT <= 218.67\ngini = 0.011\nsamples = 66863\nvalue = [66500, 363]\nclass = Not Fraud", fillcolor="#e5823a"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.007\nsamples = 66734\nvalue = [66498, 236]\nclass = Not Fraud", fillcolor="#e5813a"] ;
+1 -> 2 ;
+3 [label="gini = 0.031\nsamples = 129\nvalue = [2, 127]\nclass = Fraud", fillcolor="#3c9fe5"] ;
+1 -> 3 ;
+4 [label="TERMINAL_ID_RISK_30DAY_WINDOW <= 0.662\ngini = 0.47\nsamples = 377\nvalue = [142.0, 235.0]\nclass = Fraud", fillcolor="#b1d8f5"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="gini = 0.09\nsamples = 233\nvalue = [11, 222]\nclass = Fraud", fillcolor="#43a2e6"] ;
+4 -> 5 ;
+6 [label="gini = 0.164\nsamples = 144\nvalue = [131, 13]\nclass = Not Fraud", fillcolor="#e88e4d"] ;
+4 -> 6 ;
+}
